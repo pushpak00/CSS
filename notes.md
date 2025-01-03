@@ -29,13 +29,52 @@ To make the code work, we still need to apply this CSS (above) to your HTML docu
 The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.)
 
 #### Selector:
-This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <p> elements). To style a different element, change the selector.
+This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, < p > elements). To style a different element, change the selector.
 
 #### Declaration:
 This is a single rule like color: red;. It specifies which of the element's properties you want to style.
 
 #### Properties:
-These are features of an HTML element that you can change the values of, to make it styled differently. (In this example, color is a property of the <p> elements.) In CSS, you choose which properties you want to affect in the rule.
+These are features of an HTML element that you can change the values of, to make it styled differently. (In this example, color is a property of the < p > elements.) In CSS, you choose which properties you want to affect in the rule.
 
 #### Property value:
 To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)
+
+**Note the other important parts of the syntax:**
+
+  * Apart from the selector, each ruleset must be wrapped in curly braces. ({})
+  * Within each declaration, you must use a colon (:) to separate the property from its value or values.
+  * Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.
+
+
+To modify multiple property values in one ruleset, write them separated by semicolons, like this:
+```
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+```
+
+### Selecting Multiple Elements
+You can also select mulltiple elements and can apply a single ruleset to all of them. Seperate multiple selector by comma.
+```
+p,
+li,
+h1 {
+  color: red;
+}
+```
+
+### Diffrent Types of Selectors
+visit this link [Diffrent types of selectors ](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content#different_types_of_selectors)
+
+
+
+
+
+
+
+
+
+
